@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  font-family: 'Roboto', 'Noto Sans', sans-serif; }
+
+/* PC尺寸 */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 108px;
+  padding: 0 5%;
+  background-color: #AA0601; }
+  .header .logo {
+    width: 80px; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .menu .headerMenu {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 28px;
+      line-height: 30px; }
+
+/* 平板尺寸 */
+/* 手機尺寸 */
+@media (max-width: 414px) {
+  .header {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    position: relative; }
+    .header .logo {
+      display: block;
+      height: 100%;
+      padding: 10px 0; }
+    .header .menu {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%; }
+      .header .menu .headerMenu {
+        width: 49.5%;
+        margin: 0;
+        text-align: center;
+        padding: 8px 0;
+        border: 1px solid #fff; } }
+
+/* PC尺寸 */
+.footer {
+  background-color: #AA0601; }
+  .footer .wrap {
+    max-width: 1100px;
+    padding: 48px 5% 40px 5%;
+    position: relative;
+    margin: 0 auto; }
+    .footer .wrap .top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 32px; }
+      .footer .wrap .top .leftMenu {
+        max-width: 80%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .footer .wrap .top .leftMenu li {
+          font-size: 16px;
+          line-height: 24px;
+          color: #FFF;
+          padding: 0 10px; }
+      .footer .wrap .top .rightSocial {
+        width: 20%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    .footer .wrap .middle {
+      margin-bottom: 24px; }
+      .footer .wrap .middle .contact {
+        margin-bottom: 20px; }
+        .footer .wrap .middle .contact .info {
+          font-size: 36px;
+          line-height: 54px;
+          color: #FFF;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .footer .wrap .middle .contact .info .icon_phone {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            margin-right: 17px; }
+          .footer .wrap .middle .contact .info .icon_email {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin-right: 12px; }
+    .footer .wrap .bottom {
+      color: #FFF;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative; }
+      .footer .wrap .bottom .left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+        .footer .wrap .bottom .left .logo {
+          height: 100%;
+          margin-right: 38px; }
+        .footer .wrap .bottom .left .copyright {
+          color: #FFF;
+          font-size: 16px;
+          line-height: 24px; }
+      .footer .wrap .bottom .right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        width: 20%; }
+        .footer .wrap .bottom .right .private {
+          text-decoration: none;
+          color: #FFF;
+          font-size: 14px;
+          line-height: 21px; }
+        .footer .wrap .bottom .right .service {
+          text-decoration: none;
+          color: #FFF;
+          font-size: 14px;
+          line-height: 21px; }
+
+/* 平板尺寸 */
+@media (max-width: 768px) {
+  .footer .wrap .top .leftMenu {
+    font-size: 16px; }
+  .footer .wrap .top .rightSocial .socialImg {
+    width: 24px;
+    height: 24px; }
+  .footer .wrap .middle .contact .info {
+    font-size: 20px; }
+    .footer .wrap .middle .contact .info .icon_phone {
+      width: 24px;
+      height: 24px; }
+    .footer .wrap .middle .contact .info .icon_email {
+      width: 32px;
+      height: 32px; }
+  .footer .wrap .bottom {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .footer .wrap .bottom .left .logo {
+      display: none; }
+    .footer .wrap .bottom .left .copyright {
+      font-size: 16px; }
+    .footer .wrap .bottom .right {
+      width: 25%; } }
+
+/* 手機尺寸 */
+@media (max-width: 414px) {
+  .footer .wrap {
+    padding: 24px 15px; }
+    .footer .wrap .top {
+      float: right; }
+      .footer .wrap .top .leftMenu {
+        display: none; }
+      .footer .wrap .top .rightSocial .socialImg {
+        margin-left: 24px; }
+    .footer .wrap .middle .contact {
+      margin-bottom: 8px; }
+      .footer .wrap .middle .contact .info {
+        line-height: 21px;
+        font-size: 16px; }
+        .footer .wrap .middle .contact .info .icon_phone {
+          width: 20px;
+          height: 20px; }
+        .footer .wrap .middle .contact .info .icon_email {
+          width: 20px;
+          height: 20px; }
+      .footer .wrap .middle .contact:nth-child(2) {
+        margin-bottom: 24px; }
+    .footer .wrap .bottom {
+      position: relative;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .footer .wrap .bottom .left {
+        margin-bottom: 8px; }
+        .footer .wrap .bottom .left .logo {
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          margin-right: 0;
+          height: auto;
+          width: 12%; }
+        .footer .wrap .bottom .left .copyright {
+          font-size: 14px; }
+      .footer .wrap .bottom .right {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .footer .wrap .bottom .right .private {
+          margin-bottom: 8px; } }
+
+/* PC尺寸 */
+.body {
+  max-width: 1100px; }
+
+/* 平板尺寸 */
+/* 手機尺寸 */
+
+/*# sourceMappingURL=all.css.map */
